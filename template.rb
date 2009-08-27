@@ -32,6 +32,7 @@ plugin 'sprockets-rails',
   :submodule => true
 
 route "SprocketsApplication.routes(map)"
+route "CufonApplication.routes(map)"
 
 run "mkdir vendor/javascripts"
 
