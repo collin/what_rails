@@ -1,6 +1,7 @@
 module CufonRails
   class << self
     def routes(map)
+      # FIXME, get route to properly identify w/a filename segment
       map.resources :fonts
     end
     
@@ -10,7 +11,7 @@ module CufonRails
   end
   
   class Font < Pathname
-    def create(name)
+    def get(name)
       self.glob("{#{CufonRails.load_paths}}/#{name}").first
     end
     
@@ -25,6 +26,6 @@ class FontsController < ActionController::Base
   respond_to :js
   
   def show filename
-    respond_with CufonRails::Font.create(filename)
+    respond_with CufonRails::Font.get(filename)
   end
 end
