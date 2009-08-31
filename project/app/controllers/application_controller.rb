@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include AbstractController::ActionArgs
+  
   self.allow_forgery_protection = false
 
   helper :all # include all helpers, all the time

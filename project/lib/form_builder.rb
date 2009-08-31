@@ -1,4 +1,3 @@
-FormatFormBuilders ||= {}
 module ActionView::Helpers
   def fields_for(record_or_name_or_array, *args, &block)
     raise ArgumentError, "Missing block" unless block_given?
@@ -20,6 +19,6 @@ end
 
 class ActionView::Base
   def default_form_builder
-    FormatFormBuilders[request.format.to_sym] || self.class.default_form_builder
+    ActionController::FormatFormBuilders[request.format.to_sym] || self.class.default_form_builder
   end
 end

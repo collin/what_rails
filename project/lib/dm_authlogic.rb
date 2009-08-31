@@ -1,16 +1,18 @@
 module DMAuthlogic
   def self.included(klass)
-    klass.send :eval do
+    klass.send(:instance_eval) do
       attr_accessor :password_confirmation
 
-      alias validates_length_of         validates_length
-      alias validates_uniqueness_of     validates_is_unique
-      alias validates_confirmation_of   validates_is_confirmed
-      alias validates_presence_of       validates_present
-      alias validates_format_of         validates_format
-      alias validates_numericality_of   validates_is_number
+      class << self
+        alias validates_length_of         validates_length
+        alias validates_uniqueness_of     validates_is_unique
+        alias validates_confirmation_of   validates_is_confirmed
+        alias validates_presence_of       validates_present
+        alias validates_format_of         validates_format
+        alias validates_numericality_of   validates_is_number
+      end
 
-      property :id, Serial
+      property :id, DataMapper::Types::Serial
       property :full_name, String, :length => 1000
 
       property :email_address, String, :index => true, :null => false, :length => 1000
@@ -117,7 +119,7 @@ module DMAuthlogic
         :id
       end
 
-      alias changed? dirty?
+      alias_method :changed?, :dirty?
       class << self
         alias find_by_id get
       end
@@ -143,7 +145,7 @@ module DMAuthlogic
   end
 end
 
-module DMAuthLogicSession
+module DMAuthlogicSession
 private
   def search_for_record(*args)
     klass.send(*args)

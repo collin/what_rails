@@ -1,6 +1,7 @@
-Class User
+class User
   include DataMapper::Resource
   include DMAuthlogic
+  include Gravtastic
   
   is_gravtastic! :default => "identicon"
   

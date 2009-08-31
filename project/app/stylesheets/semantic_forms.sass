@@ -1,0 +1,134 @@
+form
+  fieldset
+    :width 34em
+    :font-size 16pt
+
+    legend
+      :font-family Georgia
+      :font-size 16pt
+      :font-color #000
+
+  label, input
+    :font-family Georgia
+    :font-size 16pt
+    :font-color #000
+
+  select
+    :font-family Georgia
+    :font-size 16pt
+    :font-color #000
+
+    option
+      :font-family Georgia
+      :font-size 16pt
+      :font-color #000
+
+  textarea
+    :font-family Georgia
+    :font-size 16pt
+    :font-color #000
+
+  input, select, textarea
+    :border-top 2px solid #999999
+    :border-left 2px solid #999999
+    :border-right 2px solid #cccccc
+    :border-bottom 2px solid #cccccc
+    :font-size 16pt
+
+  input
+    &[type=text], &[type=password]
+      :width 20em
+
+  textarea
+    :width 20em
+
+  select
+    :height 1.5em
+
+  input
+    &[type=submit], &[type=button]
+      :background #229316
+      :color #fff
+      :border-top 2px solid #55c649
+      :border-left 2px solid #55c649
+      :border-right 2px solid #006000
+      :border-bottom 2px solid #006000
+      :margin 0 5px
+
+    &[type=submit][value=cancel]
+      :border-top 2px solid #e68582
+      :border-left 2px solid #e68582
+      :border-bottom 2px solid #801f1c
+      :border-right 2px solid #801f1c
+      :color #ffb8b5
+      :background #b3524f
+
+  div
+    &.fieldWithErrors
+      :display inline
+
+      input, select, textarea
+        :border-top 2px solid #8F0600
+        :border-left 2px solid #8F0600
+        :border-bottom 2px solid #BB4036
+        :border-right 2px solid #BB4036
+        :line-height 1.5em
+
+    &.check-box-field, &.check-box-fields, &.date-field, &.datetime-field, &.file-field, &.password-field, &.radio-field, &.radio-fields, &.select-field, &.text-field, &.textarea-field, &.time-zone-select-field, &.submit-field
+      :float left
+      :clear both
+      :margin 0
+      :padding 10px
+      :border-bottom 1px solid #cccccc
+      :font-size 16pt
+
+    &.check-box-field div.input, &.check-box-fields div.input, &.date-field div.input, &.datetime-field div.input, &.file-field div.input, &.password-field div.input, &.radio-field div.input, &.radio-fields div.input, &.select-field div.input, &.text-field div.input, &.textarea-field div.input, &.time-zone-select-field div.input, &.submit-field div.input
+      :float left
+      :clear right
+      :text-align left
+      :width 20em
+      :padding-left 5px
+
+    &.check-box-field label, &.check-box-fields label, &.date-field label, &.datetime-field label, &.file-field label, &.password-field label, &.radio-field label, &.radio-fields label, &.select-field label, &.text-field label, &.textarea-field label, &.time-zone-select-field label, &.submit-field label
+      :float left
+      :display block
+      :width 12em
+      :padding-right 10px
+      :text-align right
+
+    &.check-box-field label span.help, &.check-box-fields label span.help, &.date-field label span.help, &.datetime-field label span.help, &.file-field label span.help, &.password-field label span.help, &.radio-field label span.help, &.radio-fields label span.help, &.select-field label span.help, &.text-field label span.help, &.textarea-field label span.help, &.time-zone-select-field label span.help
+      :display block
+      :font-size 60%
+      :font-weight normal
+      :margin-top 5px
+      :line-height 100%
+
+    &.submit-field
+      :border none
+
+      label span.help
+        :display block
+        :font-size 60%
+        :font-weight normal
+        :margin-top 5px
+        :line-height 100%
+
+      div.input
+        :font-size 16pt
+        :margin-left 12em
+
+    &.check-box-fields div.input label, &.radio-fields div.input label
+      :clear left
+      :width auto
+      :font-size 80%
+
+    &.required
+      :float left
+      :line-height 1.4em
+
+      label, p, span
+        :color #944
+        :font-weight bold
+
+      label span.help
+        :margin-top 0

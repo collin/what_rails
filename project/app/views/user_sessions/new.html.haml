@@ -1,0 +1,6 @@
+%h1 Login
+- form_for @user_session, :url => user_session_path do |f|
+  = f.text_field :email_address, :label => "Email Address"
+  = f.password_field :password, :label => "Password"
+  = f.check_box :remember_me, :label => "This Is Private Computer, Keep me Logged in"
+  = f.submit "Login"
