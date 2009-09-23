@@ -178,3 +178,34 @@ li {
     text-align: left; }
     #features .right li:after {
       content: ''; }
+
+#cite {
+  display: inline;
+  float: right;
+  position: relative;
+  margin: 0 -200px 1.5em 200px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+  margin-top: 10em; }
+  * html #cite {
+    overflow-x: hidden; }
+  #cite .collin {
+    margin-top: 1em;
+    color: #78471b;
+    text-align: right;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 150px; }
+    * html #cite .collin {
+      overflow-x: hidden; }
+  #cite .whattech {
+    position: relative;
+    top: -10px; }
