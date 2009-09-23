@@ -1,3 +1,0 @@
-ActionController::FormatFormBuilders = {
-  :html => SemanticFormBuilder
-}
