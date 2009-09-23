@@ -1,0 +1,7 @@
+[submodule "site/site"]
+	path = site/site
+	url = git@github.com:collin/what_rails.git
+
+[submodule "vendor/basis"]
+	path = vendor/basis
+	url = git@github.com:collin/basis.git
