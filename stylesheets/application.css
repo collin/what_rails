@@ -46,6 +46,11 @@ q, blockquote {
 img a {
   border: none; }
 
+@font-face {
+  font-family: 'Essays1743 Web';
+  src: url(/fonts/Essays1743.eot);
+  src: local('Essays1743 Web'), url(/fonts/Essays1743.ttf) format('truetype'); }
+
 html {
   overflow-x: hidden;
   height: 100%; }
@@ -59,7 +64,7 @@ body {
   overflow: hidden;
   display: inline-block;
   overflow: visible;
-  font-family: Essays1743;
+  font-family: "Essays1743 Web";
   font-size: 14pt;
   letter-spacing: 1pt;
   line-height: 1.5;
