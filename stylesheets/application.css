@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+*:focus {
+  outline: 0; }
+
+body {
+  line-height: 1em;
+  color: black;
+  background: #fff; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: "" ""; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: ""; }
+
+img a {
+  border: none; }
+
+html {
+  overflow-x: hidden;
+  height: 100%; }
+
+body {
+  line-height: 1em;
+  color: black;
+  background: #fff;
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  overflow: visible;
+  font-family: Essays1743;
+  font-size: 14pt;
+  letter-spacing: 1pt;
+  line-height: 1.5;
+  height: 100%;
+  background: #f7f8f9; }
+  body {
+    display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 46pt;
+  padding-top: 1em;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  display: inline;
+  float: right;
+  position: relative;
+  margin: 0 -280px 1.5em 280px; }
+  * html h1 {
+    overflow-x: hidden; }
+
+#book {
+  padding: 1em 0; }
+
+h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px; }
+  * html h2 {
+    overflow-x: hidden; }
+
+sup {
+  font-size: 12pt;
+  color: green;
+  position: relative;
+  left: -26pt;
+  top: -24pt; }
+  sup:before {
+    content: '*';
+    color: green;
+    padding: 5pt;
+    position: relative;
+    top: 2px; }
+
+li {
+  list-style: none;
+  text-align: right; }
+  li:after {
+    content: '*';
+    color: green;
+    padding: 5pt;
+    position: relative;
+    top: 2px;
+    right: -6px; }
+
+#benefits {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px; }
+  * html #benefits {
+    overflow-x: hidden; }
+
+#installation {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  position: relative;
+  top: -12px;
+  display: inline-block;
+  padding: 10pt 20pt;
+  background: black;
+  color: green;
+  letter-spacing: 10;
+  font-family: Consolas; }
+  * html #installation {
+    overflow-x: hidden; }
+  #installation li {
+    text-align: left; }
+    #installation li:before {
+      content: '$';
+      margin-right: 1em; }
+    #installation li:after {
+      content: ''; }
+
+.rubyist {
+  color: #ca0000; }
+
+#features .left {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+  text-align: right; }
+  * html #features .left {
+    overflow-x: hidden; }
+#features .right {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+  margin-right: 0; }
+  * html #features .right {
+    overflow-x: hidden; }
+  #features .right li {
+    text-align: left; }
+    #features .right li:after {
+      content: ''; }
