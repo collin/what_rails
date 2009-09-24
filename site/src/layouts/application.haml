@@ -5,3 +5,12 @@
     = stylesheets
   %body
     = yield
+    %script{:src=>"http://www.google-analytics.com/ga.js"}
+    :javascript
+      if(document.location.href.match("http://collin.github.com/what_rails/")) {
+        try {
+          var pageTracker = _gat._getTracker("UA-10802708-1");
+          pageTracker._trackPageview();
+        } 
+        catch(err) {}
+      }

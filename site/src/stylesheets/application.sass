@@ -1,6 +1,28 @@
 @import blueprint/modules/grid.sass
+@import blueprint/modules/typography.sass
 @import compass/reset.sass
 @import compass/utilities/general.sass
+
+!ruby = #ca0000
+
+=opacity(!opacity)
+  :opacity= !opacity
+  :-moz-opacity= !opacity
+  :-khtml-opacity= !opacity
+  :-ms-filter= "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + round(!opacity*100) + ")"
+  :filter= "alpha(opacity=" + round(!opacity*100) + ")"
+
+=font-face(!family)
+  @font-face
+    :font-family= "'"+!family+" Web'"
+    :src= "url(../fonts/"+!family+".otf)"
+    :src= "url(../fonts/"+!family+".ttf) format('truetype')"
+
++font-face("Essays1743")
++blueprint-typography
+
+ul, ol
+  :margin 0
 
 html
   :overflow-x hidden
@@ -11,7 +33,7 @@ body
   +container
   :overflow visible
   :font
-    :family Essays1743
+    :family "Essays1743 Web"
     :size 14pt
   :letter-spacing 1pt
   :line-height 1.5
@@ -61,6 +83,9 @@ li
     :top 2px
     :right -6px
     
+.love
+  :color= !ruby
+    
 #benefits
   +column(12)
     
@@ -83,7 +108,20 @@ li
       :content ''
   
 .rubyist
-  :color #ca0000
+  :color= !ruby
+  :cursor help
+  .definition
+    :color black
+    :visibility hidden
+    :font-size 12pt
+    +column(5)
+    :float right
+    :height 0px
+    :position relative
+    :left 2em
+    :top 8pt
+  &:hover .definition
+    :visibility visible
   
 #features
   .left
@@ -98,6 +136,19 @@ li
       &:after
         :content ''
       
-  
+#cite
+  +push(5)
+  +column(24)
+  +opacity(0.4)
+  :margin-top 10em
+  .collin
+    :margin-top 1em
+    :color #78471b
+    :text-align right
+    +column(4)
+  .whattech
+    :position relative
+    :top -10px
+      
 
     
